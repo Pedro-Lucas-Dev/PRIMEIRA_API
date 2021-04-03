@@ -5,7 +5,7 @@ const cors = require("cors");
 const pokemonController = require("./controller/pokemon.controller");
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 
 const FormValidation = (fields) => {
   const errors = [];
