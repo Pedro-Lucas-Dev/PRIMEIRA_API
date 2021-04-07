@@ -4,7 +4,7 @@ const pokemonSchema = new mongoose.Schema(
   {
     id: "string",
     name: "string",
-    type: "string",
+    types: "object",
     color: "string",
     evolutions: [],
     createDate: "date",
